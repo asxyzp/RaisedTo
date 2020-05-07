@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initital-scale=1" />
+    <title>RaisedTo</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header class="jumbotron">
+      <h1>
+        RaisedTo
+      </h1>
+      <p>
+        A small mathematical application which shows how to raise a rational
+        number to an irrational number.
+        <br />Created by
+        <a href="https://asxyzp.glitch.me" target="_blank">asxyzp</a>
+      </p>
+    </header>
+    <div class="container input-form">
+      <form class="row">
+        <label class="col-md-4" for="rational">
+          <input
+            name="rational"
+            id="rational"
+            type="text"
+            placeholder="Enter a rational number"
+          />
+        </label>
+
+        <button
+          type="button"
+          class="btn-primary col-md-4"
+          onclick="printInput()"
+        >
+          raised by
+        </button>
+
+        <label class="col-md-4" for="irrational">
+          <input
+            name="irrational"
+            id="irrational"
+            type="text"
+            placeholder="Enter an rational form of irr. no."
+          />
+        </label>
+      </form>
+    </div>
+
+    <div class="container-fluid" id="valueEntered">
+      <p>
+        <strong>Value of entered rational number</strong> :
+        <span id="rationalEnter"></span>
+      </p>
+      <p>
+        <strong>Value of entered irrational number</strong> :
+        <span id="irrationalEnter"></span>
+      </p>
+      <p>
+        <strong
+          >Sequence of finite rational numbers with increase decimal digts
+          representing irrational number</strong
+        >: <br /><span id="rationalSeq"></span>
+      </p>
+      <p>
+        <strong
+          >Rational numbers raised to representing irrational number</strong
+        >: <br /><span id="raisedSeq"></span>
+      </p>
+    </div>
+    <hr>
+    <div class="instruct">
+      <strong>
+        <p>
+          Instructions on how to proceed :
+        </p>
+      </strong>
+      <ol>
+        <li>Enter a rational number in the text field with placeholder text as "Enter a rational number" (e.g. 10 or 123.457).</li>
+        <li>Enter a rational number representing an irrational number upto finite number of digits (e.g. 3.1415926535 for pi).</li>
+        <li>Press the button with text "raised by"</li>
+      </ol>
+    </div>
+  </body>
+</html>
