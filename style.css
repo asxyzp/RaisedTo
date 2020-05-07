@@ -1,0 +1,34 @@
+body {
+  text-align: center;
+}
+
+.jumbotron {
+  text-align: center;
+}
+
+h1 {
+  font-family: "Lobster";
+}
+
+[type="text"] {
+  text-align: center;
+  width: 100%;
+}
+
+#valueEntered {
+  margin: 1%;
+}
+
+ol {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+li{
+  padding:3px;
+}
+
+ol li:{
+  font-weight:bold;
+}
